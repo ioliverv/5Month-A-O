@@ -1,0 +1,29 @@
+:root {
+  --night: #190f29;
+  --night-soft: #2e1936;
+  --cream: #fff1d6;
+  --muted: #e5cfbe;
+  --orange: #f4a43b;
+  --gold: #ffcf75;
+  --pink: #dd8e92;
+}
+* { box-sizing: border-box; }
+html { min-height: 100%; width: 100%; max-width: 100%; min-width: 0 !important; overflow-x: hidden; background: var(--night); }
+body { margin: 0; width: 100%; max-width: 100%; min-width: 0 !important; min-height: 100vh; overflow-x: hidden; color: var(--cream); font-family: "DM Sans", sans-serif; background: radial-gradient(ellipse at 50% 26%, #512a48 0%, transparent 48%), radial-gradient(ellipse at 50% 92%, #562f32 0%, transparent 46%), var(--night); }
+button, a { font: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+/* El foco programático anuncia la escena sin dibujar un marco alrededor del título. */
+.scene h1:focus, .scene h2:focus { outline: none; }
+[hidden] { display: none !important; }
+.experience { position: relative; z-index: 1; width: min(1180px, calc(100% - 64px)); margin: 0 auto; }
+.scene { min-height: min(810px, calc(100svh - 70px)); padding: 80px 0 65px; animation: enter .55s ease-out both; }
+h1, h2, p { margin-top: 0; }
+h1, h2 { font-family: "Fraunces", Georgia, serif; font-weight: 500; line-height: 1.14; letter-spacing: -.035em; }
+h1 em, h2 em { color: var(--gold); font-weight: inherit; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 22px; min-height: 54px; border: 1px solid transparent; border-radius: 5px; padding: 13px 24px; text-decoration: none; font-weight: 700; font-size: .87rem; transition: transform .2s, background .2s; }
+.button:hover { transform: translateY(-3px); }
+.button span { font-size: 1.2em; }
+@keyframes enter { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }

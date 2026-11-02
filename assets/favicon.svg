@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="ivory" cx="50%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="58%" stop-color="#fff4e4"/>
+      <stop offset="100%" stop-color="#f7cfa0"/>
+    </radialGradient>
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe596"/>
+      <stop offset="100%" stop-color="#ff922b"/>
+    </linearGradient>
+    <filter id="drop" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="1.8" stdDeviation="1.6" flood-color="#14031c" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+  <g filter="url(#drop)">
+    <!-- Silueta anatómica de Calavera de Azúcar (cráneo redondo, pómulos marcados, mandíbula definida) -->
+    <path d="M32 5
+             C47 5, 55 14, 55 26.5
+             C55 30, 53.5 32.5, 53.5 34.5
+             C55.5 36.5, 56 40.5, 53 43.5
+             C50.5 46, 46.5 46.2, 44.5 47.5
+             L43.5 54.5
+             C43 58, 38.5 60, 32 60
+             C25.5 60, 21 58, 20.5 54.5
+             L19.5 47.5
+             C17.5 46.2, 13.5 46, 11 43.5
+             C8 40.5, 8.5 36.5, 10.5 34.5
+             C10.5 32.5, 9 30, 9 26.5
+             C9 14, 17 5, 32 5 Z"
+          fill="url(#ivory)" stroke="#2d0724" stroke-width="2.4" stroke-linejoin="round"/>
+
+    <!-- Borde ornamental interno del cráneo -->
+    <path d="M14 24 C14 13, 21 8.5, 32 8.5 C43 8.5, 50 13, 50 24"
+          fill="none" stroke="#ff9e2b" stroke-width="1.2" stroke-dasharray="2 2" opacity="0.85"/>
+
+    <!-- Volutas / arabescos en la frente -->
+    <path d="M23 15.5 C19 13.5, 16 16, 16.5 19.5 C17 21.5, 19.5 21.5, 20 19.8" fill="none" stroke="#e03168" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M41 15.5 C45 13.5, 48 16, 47.5 19.5 C47 21.5, 44.5 21.5, 44 19.8" fill="none" stroke="#e03168" stroke-width="1.6" stroke-linecap="round"/>
+
+    <!-- Flor de cempasúchil central en la frente -->
+    <circle cx="36.2" cy="15.5" r="2.0" fill="#ff922b"/>
+    <circle cx="35.0" cy="18.5" r="2.0" fill="#ff922b"/>
+    <circle cx="32.0" cy="19.7" r="2.0" fill="#ff922b"/>
+    <circle cx="29.0" cy="18.5" r="2.0" fill="#ff922b"/>
+    <circle cx="27.8" cy="15.5" r="2.0" fill="#ff922b"/>
+    <circle cx="29.0" cy="12.5" r="2.0" fill="#ff922b"/>
+    <circle cx="32.0" cy="11.3" r="2.0" fill="#ff922b"/>
+    <circle cx="35.0" cy="12.5" r="2.0" fill="#ff922b"/>
+    <circle cx="32" cy="15.5" r="3.2" fill="#e03168" stroke="#ffe596" stroke-width="1"/>
+    <circle cx="32" cy="15.5" r="1.2" fill="#fff"/>
+
+    <!-- Pétalos festoneados alrededor de los ojos -->
+    <circle cx="30.7" cy="31.5" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="29.1" cy="36.3" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="25.0" cy="39.3" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="20.0" cy="39.3" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="15.9" cy="36.3" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="14.3" cy="31.5" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="15.9" cy="26.7" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="20.0" cy="23.7" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="25.0" cy="23.7" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="29.1" cy="26.7" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="49.7" cy="31.5" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="48.1" cy="36.3" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="44.0" cy="39.3" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="39.0" cy="39.3" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="34.9" cy="36.3" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="33.3" cy="31.5" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="34.9" cy="26.7" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="39.0" cy="23.7" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="44.0" cy="23.7" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+    <circle cx="48.1" cy="26.7" r="2.1" fill="#ff9e2b" stroke="#38092c" stroke-width="0.7"/>
+
+    <!-- Cavidades oculares profundas -->
+    <circle cx="22.5" cy="31.5" r="6.8" fill="#21051e" stroke="#ffe082" stroke-width="1.2"/>
+    <circle cx="41.5" cy="31.5" r="6.8" fill="#21051e" stroke="#ffe082" stroke-width="1.2"/>
+
+    <!-- Corazones brillantes dentro de los ojos -->
+    <path d="M22.5 35.8 C22.5 35.8, 18.2 32.6, 18.2 29.8 C18.2 28.1, 19.5 27, 20.9 27 C21.8 27, 22.3 27.5, 22.5 28.3 C22.7 27.5, 23.2 27, 24.1 27 C25.5 27, 26.8 28.1, 26.8 29.8 C26.8 32.6, 22.5 35.8, 22.5 35.8 Z" fill="#ff3366"/>
+    <circle cx="20.6" cy="29.2" r="0.9" fill="#fff" opacity="0.9"/>
+
+    <path d="M41.5 35.8 C41.5 35.8, 37.2 32.6, 37.2 29.8 C37.2 28.1, 38.5 27, 39.9 27 C40.8 27, 41.3 27.5, 41.5 28.3 C41.7 27.5, 42.2 27, 43.1 27 C44.5 27, 45.8 28.1, 45.8 29.8 C45.8 32.6, 41.5 35.8, 41.5 35.8 Z" fill="#ff3366"/>
+    <circle cx="39.6" cy="29.2" r="0.9" fill="#fff" opacity="0.9"/>
+
+    <!-- Cavidad nasal de corazón invertido (clásica de calavera) -->
+    <path d="M32 35.2
+             C30.2 38, 28.2 40.8, 28.8 42.8
+             C29.2 44.2, 31 44, 32 42.6
+             C33 44, 34.8 44.2, 35.2 42.8
+             C35.8 40.8, 33.8 38, 32 35.2 Z"
+          fill="#21051e" stroke="#ff922b" stroke-width="1"/>
+
+    <!-- Decoración floral en los pómulos -->
+    <path d="M12.5 38.5 C14.5 41.5, 17.5 42.5, 20.5 41.5" fill="none" stroke="#e03168" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M51.5 38.5 C49.5 41.5, 46.5 42.5, 43.5 41.5" fill="none" stroke="#e03168" stroke-width="1.6" stroke-linecap="round"/>
+    <circle cx="14" cy="36.5" r="1.5" fill="#15b8a6"/>
+    <circle cx="50" cy="36.5" r="1.5" fill="#15b8a6"/>
+    <circle cx="17" cy="44" r="1.3" fill="#ff922b"/>
+    <circle cx="47" cy="44" r="1.3" fill="#ff922b"/>
+
+    <!-- Sonrisa y dientes esculpidos de calavera -->
+    <rect x="23.5" y="47.5" width="17" height="6.2" rx="3.1" fill="#ffffff" stroke="#2d0724" stroke-width="1.8"/>
+    <line x1="21" y1="50.6" x2="43" y2="50.6" stroke="#2d0724" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="27.8" y1="47.8" x2="27.8" y2="53.4" stroke="#2d0724" stroke-width="1.5"/>
+    <line x1="32" y1="47.6" x2="32" y2="53.6" stroke="#2d0724" stroke-width="1.5"/>
+    <line x1="36.2" y1="47.8" x2="36.2" y2="53.4" stroke="#2d0724" stroke-width="1.5"/>
+
+    <!-- Detalle de corazón/pétalo en la barbilla -->
+    <circle cx="32" cy="56.8" r="1.4" fill="#e03168"/>
+    <circle cx="28" cy="56.5" r="1" fill="#ff922b"/>
+    <circle cx="36" cy="56.5" r="1" fill="#ff922b"/>
+  </g>
+</svg>

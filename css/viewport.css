@@ -593,8 +593,8 @@ html, body {
    ========================================================================== */
 @media (max-width: 599px) and (orientation: portrait) {
   .experience {
-    width: min(100% - 24px, 440px);
-    padding-top: 14vh;
+    width: min(100% - 20px, 440px);
+    padding-top: 17.5vh;
     padding-bottom: max(12px, env(safe-area-inset-bottom));
   }
   .back-link {
@@ -611,13 +611,11 @@ html, body {
     height: 32px;
     padding: 0;
   }
-  /* En el inicio baja ANAHÍ Y OLIVER para quedar simétrico junto a la fecha y las calaveras */
-  body[data-scene="intro"] .hero-title-wrap {
-    top: 12.5%;
-  }
-  /* En preguntas, carta y final sube ligeramente para dejar espacio simétrico al contenido */
+  /* Mantiene ANAHÍ Y OLIVER fijo siempre en su posición inicial en celular */
+  .hero-title-wrap,
+  body[data-scene="intro"] .hero-title-wrap,
   body:not([data-scene="intro"]) .hero-title-wrap {
-    top: 7.8%;
+    top: 12.5%;
   }
   .hero-title-box {
     max-width: calc(100% - 12px);
@@ -733,11 +731,11 @@ html, body {
   }
   /* Escena 3 (Carta) en celular vertical */
   .letter {
-    padding: 20px 8px 14px;
+    padding: 16px 4px 12px;
     justify-content: center;
   }
   .letter-card-wrap {
-    width: calc(100% - 8px);
+    width: calc(100% - 6px);
     max-height: min(465px, 64svh);
   }
   .cradle-flap {
@@ -745,50 +743,70 @@ html, body {
     height: 22px;
   }
   .letter-envelope-cradle {
-    left: -9px;
-    right: -9px;
+    left: -7px;
+    right: -7px;
     bottom: -8px;
     height: 55%;
   }
   .letter-paper {
     width: 100%;
-    padding: clamp(20px, 3vh, 26px) clamp(18px, 5vw, 26px);
+    padding: clamp(18px, 2.6vh, 24px) clamp(16px, 4.2vw, 22px);
+  }
+  .letter-paper::before {
+    inset: 6px;
+  }
+  .letter-paper::after {
+    inset: 9px;
   }
   .ornament-crest-svg {
-    width: clamp(118px, 32vw, 138px);
+    width: clamp(114px, 30vw, 134px);
   }
   .letter-corner {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
+  .corner-tl { top: 9px; left: 9px; }
+  .corner-tr { top: 9px; right: 9px; }
+  .corner-bl { bottom: 9px; left: 9px; }
+  .corner-br { bottom: 9px; right: 9px; }
   .letter-paper h2 {
-    font-size: clamp(1.38rem, 5.5vw, 1.68rem);
-    margin: 4px 0 4px;
+    font-size: clamp(1.34rem, 5.3vw, 1.62rem);
+    margin: 2px 0 3px;
   }
   .letter-title-divider {
-    margin: 0 auto 8px;
+    margin: 0 auto 6px;
   }
   .letter-body p {
-    font-size: clamp(.98rem, 4.1vw, 1.08rem);
-    line-height: 1.62;
+    font-size: clamp(.95rem, 4vw, 1.06rem);
+    line-height: 1.58;
   }
   .letter-body p:not(.signature-page)::after {
-    margin-top: 8px;
-    font-size: .62rem;
+    margin-top: 6px;
+    font-size: .6rem;
   }
   .letter-navigation {
-    padding-top: 10px;
-    margin-top: 8px;
-    min-height: 42px;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 6px;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    margin-top: 6px;
+    min-height: 40px;
+  }
+  .letter-navigation:has(#previous-page:not([hidden])) {
+    grid-template-columns: auto 1fr auto;
   }
   .letter-navigation .button {
-    min-height: 36px;
-    padding: 7px 14px;
-    font-size: .7rem;
+    min-height: 34px;
+    padding: 6px 11px;
+    font-size: clamp(.6rem, 2.7vw, .68rem);
+    letter-spacing: .04em;
+    gap: 4px;
   }
   #letter-progress {
-    font-size: .74rem;
-    padding: 4px 12px;
+    font-size: clamp(.62rem, 2.7vw, .7rem);
+    padding: 3px 9px;
+    letter-spacing: .08em;
   }
   /* Escena 4 (Final) en celular vertical */
   .finale {
@@ -867,9 +885,22 @@ html, body {
     padding: 6px 8px;
     font-size: .6rem;
   }
+  .letter-paper {
+    padding: 16px 12px;
+  }
+  .letter-navigation {
+    gap: 4px;
+  }
   .letter-navigation .button {
-    padding: 5px 10px;
-    font-size: .6rem;
+    min-height: 32px;
+    padding: 5px 8px;
+    font-size: .56rem;
+    letter-spacing: .02em;
+  }
+  #letter-progress {
+    padding: 3px 7px;
+    font-size: .58rem;
+    letter-spacing: .05em;
   }
 }
 

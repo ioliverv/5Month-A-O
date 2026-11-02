@@ -32,7 +32,7 @@ export function renderLetter({ animate = true, resetPage = true } = {}) {
   pages = [];
   const measure = document.createElement("p");
   body.replaceChildren(measure);
-  const maxAllowedHeight = Math.max(60, body.clientHeight - 6);
+  const maxAllowedHeight = Math.max(60, body.clientHeight - 10);
   const fits = (text) => {
     measure.textContent = text;
     return measure.offsetHeight <= maxAllowedHeight;
